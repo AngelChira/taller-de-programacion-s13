@@ -175,7 +175,7 @@ public class FrmTriangulo extends javax.swing.JFrame {
             txtA.setText("");
             txtB.setText("");
             txtC.setText("");
-            if("".equalsIgnoreCase(txtAltura.getText())){
+            if("".equalsIgnoreCase(txtAltura.getText()) || Byte.parseByte(txtAltura.getText())<1){
                 JOptionPane.showMessageDialog(
                         null,
                         "Advertencia, la altura ingresada debe ser mayor a 0.",
@@ -184,7 +184,7 @@ public class FrmTriangulo extends javax.swing.JFrame {
                 txtAltura.requestFocus();
                 return;
             }
-            if("".equalsIgnoreCase(txtBase.getText())){
+            if("".equalsIgnoreCase(txtBase.getText()) || Byte.parseByte(txtBase.getText())<1){
                 JOptionPane.showMessageDialog(
                         null,
                         "Advertencia, la base ingresada debe ser mayor a 0.",
@@ -200,7 +200,7 @@ public class FrmTriangulo extends javax.swing.JFrame {
                     +triangulo.AreaBaseAltura()+" u²");
             
         } else if (rdbPerimetro.isSelected() || rdbAreaSemiperimetro.isSelected() || rdbSemiperimetro.isSelected()) {
-            if("".equalsIgnoreCase(txtA.getText())){
+            if("".equalsIgnoreCase(txtA.getText()) || Byte.parseByte(txtA.getText())<1){
                 JOptionPane.showMessageDialog(
                         null,
                         "Advertencia, el valor de a debe ser mayor a 0.",
@@ -209,7 +209,7 @@ public class FrmTriangulo extends javax.swing.JFrame {
                 txtAltura.requestFocus();
                 return;
             }
-            if("".equalsIgnoreCase(txtB.getText())){
+            if("".equalsIgnoreCase(txtB.getText()) || Byte.parseByte(txtA.getText())<1){
                 JOptionPane.showMessageDialog(
                         null,
                         "Advertencia, el valor de b debe ser mayor a 0.",
@@ -218,7 +218,7 @@ public class FrmTriangulo extends javax.swing.JFrame {
                 txtAltura.requestFocus();
                 return;
             }
-            if("".equalsIgnoreCase(txtC.getText())){
+            if("".equalsIgnoreCase(txtC.getText()) || Byte.parseByte(txtA.getText())<1){
                 JOptionPane.showMessageDialog(
                         null,
                         "Advertencia, el valor de c debe ser mayor a 0.",

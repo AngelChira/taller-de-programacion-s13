@@ -75,7 +75,8 @@ public class Triangulo {
     }
     
     public float AreaSemiperimetro(){
-        return (float) (Math.sqrt(semiperimetro()*(semiperimetro()-a)*(semiperimetro()- b)*(semiperimetro()- c)));
+        return (float) (Math.sqrt(semiperimetro()*(semiperimetro()-a)
+                *(semiperimetro()- b)*(semiperimetro()- c)));
     }
     
 }
